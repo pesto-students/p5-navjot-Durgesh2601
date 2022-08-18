@@ -1,0 +1,27 @@
+.main-container{
+    border: 1px solid red;
+    height: 40rem;
+    display: flex;
+}
+.sidebar-container{
+    border: 1px solid green;
+    width: 3.5%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+#sidebar-aside{
+    padding: 0rem 1rem 1rem 1rem;
+}
+#sidebar-aside > section{
+    margin-top: 3.2rem;
+}
+.head-container{
+    border: 1px solid turquoise;
+    width: 96.5%;
+    height: 100%;
+}
+.head-sub-div{
+    border: 1px solid black;
+    height: 45%;
+    width: 100%;
+}
