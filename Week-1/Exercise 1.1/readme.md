@@ -1,9 +1,9 @@
-# How a browser renders an url entered by user
+# How a browser renders an URL entered by user
 
 A web browser is a utility or an interface which helps user to access data which is there on remote servers.
 
 ## What happens when we enter an URL in the browser ?
-1. So whenever we enter URL url its first part is 'https' or 'http' 'ftp etc. This basically tells the browser which protocol it should use.
+1. So whenever we enter URL url its first part is ```https``` or ```http``` ```ftp``` etc. This basically tells the browser which protocol it should use.
  ##### What's a protocol ?
 A protocol is a set of rules that browser use for communication over the network. When we talk about 'https' it's just a secure version, i.e. information is exchanged in a secure way.
 
@@ -32,3 +32,8 @@ As shown in the image below the Rendering Engine retrieves the Request Resources
 5. The rendering process is gradual, asynchronous process. For a better experience, the rendering engine will attempt to render content asap. That means it won't wait untill all the requested resources return from the networking component to begin painting render-tree nodes.
 
 [![Rendering-Engine-1.jpg](https://i.postimg.cc/KYBB8WSW/Rendering-Engine-1.jpg)](https://postimg.cc/xkjcstdG)
+
+
+## Hierarchy of HTML
+Let's understand the hierarchy of HTML with the help of diagram below.
+[![HTML-hierarchy-Diagram.jpg](https://i.postimg.cc/SxsH3wYc/HTML-hierarchy-Diagram.jpg)](https://postimg.cc/dLbWTNB0)
