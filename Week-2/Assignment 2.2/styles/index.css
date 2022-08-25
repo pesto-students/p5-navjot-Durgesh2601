@@ -16,7 +16,7 @@ h1 {
 .container > div {
   height: 110px;
   width: 110px;
-  transition: transform 1s ease-in-out;
+  transition: transform 0.9s ease-out;
   z-index: 1000;
 }
 #first {
