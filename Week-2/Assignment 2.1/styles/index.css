@@ -29,7 +29,8 @@ header {
 }
 .sub-container:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transform: translate(0rem, 1rem);
+    transform: translate(-0.3rem, 1rem);
+    transition: transform 1s ease-in-out;
 }
 #first{
     grid-area: a;
@@ -49,11 +50,19 @@ header {
     height: fit-content;
     grid-area: d;
     padding-top: 0;
+    transform: none;
+    box-shadow: none;
 }
 #fourth > img{
     border: 1px solid lightgray;
     border-radius: 1rem;
     padding: 0.2rem;
+}
+#fourth > img:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    transform: translate(-0.5rem, 1rem);
+    transition: transform 1s ease-in-out;
 }
 #fifth{
     grid-area: e;
