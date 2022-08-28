@@ -3,32 +3,6 @@
   background-color: whitesmoke;
   scroll-behavior: smooth;
 }
-nav {
-  padding: 0px;
-  padding-left: -5%;
-  margin: 0px;
-}
-.navbar {
-  background-color: #009688;
-  border: 1px solid whitesmoke;
-  position: fixed;
-  position: -webkit-sticky;
-  top: 0;
-  width: 100%;
-}
-.navbar > ul {
-  display: flex;
-  justify-content: space-around;
-  background-color: #009688;
-}
-ul {
-  list-style-type: none;
-}
-.nav-item {
-  color: white;
-  text-decoration: none;
-  background-color: #009688;
-}
 header {
   text-align: center;
   margin-top: 1rem;
@@ -51,7 +25,6 @@ header {
   padding: 0.5rem;
   border: 1px solid lightgray;
   margin-top: 0.5rem;
-  padding: 2.5%;
   border-radius: 1rem;
   cursor: pointer;
 }
@@ -74,12 +47,13 @@ header {
 }
 #fourth {
   border: none;
-  height: 20rem;
   height: fit-content;
   grid-area: d;
   padding-top: 0;
   transform: none;
   box-shadow: none;
+  width: fit-content;
+  margin: auto;
 }
 #fourth > img {
   border: 1px solid lightgray;
@@ -172,7 +146,7 @@ input[name="title"] {
 a {
   color: #009688;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .main-container {
     grid-template-areas:
       "a b"
@@ -181,6 +155,37 @@ a {
       "f .";
   }
   .form-div {
-    padding: 0.2rem;
+    padding-left: 8rem;
+    width: 70%;
+  }
+  .about-us {
+    width: 100%;
+  }
+  .navbar {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 468px) {
+  .main-container {
+    grid-template-areas:
+      "a"
+      "b"
+      "d"
+      "c"
+      "e"
+      "f";
+  }
+  .sub-container {
+    width: 90%;
+    margin: auto;
+  }
+  #fourth {
+    width: 90%;
+  }
+  #fourth > img {
+    width: 100%;
+  }
+  .form-div {
+    padding-left: 2.5rem;
   }
 }
