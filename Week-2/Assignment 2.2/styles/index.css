@@ -1,0 +1,49 @@
+h1 {
+  text-align: center;
+  position: absolute;
+  left: 49%;
+  top: 40%;
+}
+.container {
+  width: 280px;
+  height: 220px;
+  margin: auto;
+  margin-top: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container > div {
+  height: 110px;
+  width: 110px;
+  transition: transform 0.9s ease-out;
+  z-index: 1000;
+}
+#first {
+  background-color: red;
+  transform-origin: top left;
+}
+#second {
+  background-color: yellow;
+  transform-origin: top right;
+}
+#third {
+  background-color: blue;
+  transform-origin: bottom left;
+}
+#last {
+  background-color: green;
+  transform-origin: bottom right;
+}
+.container:hover #first {
+  transform: rotate(90deg);
+}
+.container:hover #second {
+  transform: rotate(-90deg);
+}
+.container:hover #third {
+  transform: rotate(-90deg);
+}
+.container:hover #last {
+  transform: rotate(90deg);
+}
