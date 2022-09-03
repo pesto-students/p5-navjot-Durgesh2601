@@ -32,8 +32,8 @@ intro.call(object, "Hey there!");
 
 ///----> Apply ----->
 
-function introAdvanced (data) {
-    const constants = [...data, "My name is", `${this.name}.`, "I am a", `${this.designation}.`];
+function introAdvanced (...data) {
+    const constants = [...data, "My name is", `${this.name}.`, "I am a gandu", `${this.designation}.`];
     console.log(constants.join(" "));
 } 
-introAdvanced.call(object, ["Hey", "there", "!"]);
+introAdvanced.apply(object, ["Hey", "there", "!"]);
