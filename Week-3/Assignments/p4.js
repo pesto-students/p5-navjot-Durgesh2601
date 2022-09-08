@@ -10,7 +10,7 @@ function createStack () {
 }
 
 const [items, push, pop] = createStack();
-push(10);
-push(5);
+push(10); //[10]
+push(5); //[10,5]
 pop();
-console.log(items);
+console.log(items);// [10]
