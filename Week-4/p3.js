@@ -1,6 +1,6 @@
 const getFibonacci = (num) => {
   let i = 0;
-  let currentTarget = 0;
+  let currentTarget = i;
   let nextTarget = i + 1;
   const obj = {
     [Symbol.iterator]() {
@@ -27,7 +27,7 @@ const getFibonacci = (num) => {
   return obj;
 };
 
-for (const element of getFibonacci(13)) {
+for (const element of getFibonacci(5)) {
   if (element === 0) {
     console.log("The Fibonacci Series is :");
   }
