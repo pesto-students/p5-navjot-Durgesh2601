@@ -16,21 +16,19 @@ const promiseStates = {
     pending : 0, fulfilled : 1, rejected : 2, 
 }
 
-function customPromise(executor) {
+function customPromise(arg) {
   const { pending, fulfilled, rejected } = promiseStates;
   let state = pending;
-  let value = null;
-  let executionTime = null;
+  let value;
+  let executionTime;
 
   function resolve(result) {
-    if (state !== pending) return;
     console.time();
     state = fulfilled;
     value = result;
     executionTime = console.timeEnd();
   }
   function reject(err) {
-    if (state !== pending) return;
     console.time();
     state = rejected;
     value = err;
@@ -48,7 +46,7 @@ function customPromise(executor) {
     }
     return this;
   };
-  executor(resolve, reject);
+  arg(resolve, reject);
 }
 
 let promise1 = new customPromise((resolve, reject) => {

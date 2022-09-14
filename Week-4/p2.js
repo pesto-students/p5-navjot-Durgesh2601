@@ -9,7 +9,7 @@ const Teacher = function () {};
 
 Object.setPrototypeOf(Teacher.prototype, Person.prototype);
 Teacher.prototype.teach = function (subject) {
-  console.log(`${this.name} is now teaching ${subject} `);
+  console.log(`${this.name} who is ${this.age} years old, is now teaching ${subject} `);
 };
 var him = new Teacher();
 
