@@ -27,7 +27,7 @@ const getFibonacci = (num) => {
   return obj;
 };
 
-for (const element of getFibonacci(5)) {
+for (const element of getFibonacci(7)) {
   if (element === 0) {
     console.log("The Fibonacci Series is :");
   }
