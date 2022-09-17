@@ -8,13 +8,6 @@ function vowelCount(str) {
     isVowel(lowerCaseChar) && vowelMap.has(lowerCaseChar)
       ? vowelMap.set(lowerCaseChar, vowelMap.get(lowerCaseChar) + 1)
       : isVowel(lowerCaseChar) && vowelMap.set(lowerCaseChar, 1);
-    // if (isVowel(lowerCaseChar)) {
-    //     if (vowelMap.has(lowerCaseChar)) {
-    //         vowelMap.set(lowerCaseChar, vowelMap.get(lowerCaseChar) + 1);
-    //     } else {
-    //         vowelMap.set(lowerCaseChar, 1);
-    //     }
-    // }
   }
   return vowelMap;
 }

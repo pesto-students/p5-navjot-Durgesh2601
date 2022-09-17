@@ -1,35 +1,38 @@
-const promise_obj = new Promise((resolve, reject) => {
-  resolve(`The promise -  is resolved`);
-});
-// const secondFunction = () => {
-//   return new Promise((res, rej) => {
-//     res("Done with task 2");
-//   });
-// };
+//promise function
+const makePromise = (str) => {
+  const timeOut = getTimeOut(str);
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(`The ${str} promise is resolved`);
+    }, timeOut);
+  });
+};
 
-// const thirdFunction = () => {
-//   return new Promise((res, rej) => {
-//     res("Done with task 3");
-//   })
-// };
+//function to get timeout
+const getTimeOut = (str) => {
+  switch (str) {
+    case "first":
+      return 1000;
+    case "second":
+      return 2000;
+    case "third":
+      return 3000;
+    default:
+      return 1000;
+  }
+};
 
 const doTask1 = async () => {
-  let result = await promise_obj;
-  //let data = await result;
-  //return data;
-  return result;
+  const result = await makePromise(`first`);
+  console.log(result);
 };
-
 const doTask2 = async () => {
-  let result = await secondFunction();
-  let data = await result;
-  return data;
+  const result = await makePromise(`second`);
+  console.log(result);
 };
-console.log(doTask1());
 const doTask3 = async () => {
-  let result = await thirdFunction();
-  let data = await result;
-  return data;
+  const result = await makePromise(`third`);
+  console.log(result);
 };
 
 function* genrator_func() {
@@ -39,8 +42,10 @@ function* genrator_func() {
 }
 
 let response = genrator_func();
-// console.log(response.next());
-// console.log(response.next());
-// console.log(response.next());
+response.next();
+response.next();
+response.next();
 
-
+//for(let i = 0; i < 3; i++){
+// response.next();
+//}
