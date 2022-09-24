@@ -24,28 +24,31 @@ const getTimeOut = (str) => {
 
 const doTask1 = async () => {
   const result = await makePromise(`first`);
-  console.log(result);
+  return result;
+  //console.log(result);
 };
 const doTask2 = async () => {
   const result = await makePromise(`second`);
-  console.log(result);
+  return result;
+  //console.log(result);
 };
 const doTask3 = async () => {
   const result = await makePromise(`third`);
-  console.log(result);
+  return result;
+  //console.log(result);
 };
 
-function* genrator_func() {
-  yield doTask1();
-  yield doTask2();
-  yield doTask3();
+async function* genrator_func() {
+  yield await doTask1();
+  yield await doTask2();
+  yield await doTask3();
 }
-
-let response = genrator_func();
-response.next();
-response.next();
-response.next();
-
-//for(let i = 0; i < 3; i++){
-// response.next();
-//}
+const temp = async() => {
+  let response = genrator_func();
+  const t1 = await response.next();
+  console.log(t1);
+  // console.log(await response.next());
+  console.log(await response.next());
+  console.log(await response.next());
+}
+temp();
