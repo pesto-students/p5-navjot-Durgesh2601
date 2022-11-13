@@ -10,6 +10,7 @@
   width: 30%;
   margin: auto;
 }
+
 .input-todo{
   margin-right: 0.5em;
   width: 15em;
@@ -54,6 +55,7 @@
 }
 .delete{
   padding: 0.5em 1.6em;
+  
 }
 .title-status{
   font-weight: bold;
