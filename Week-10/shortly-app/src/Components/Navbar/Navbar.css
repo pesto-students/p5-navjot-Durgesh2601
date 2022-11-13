@@ -1,8 +1,10 @@
 .navbar {
   width: 100%;
-  padding: 0.3em;
   display: flex;
   justify-content: space-around;
+  position: fixed;
+  top: 0;
+  background-color: white;
 }
 .navbar-sections {
   width: 25%;
