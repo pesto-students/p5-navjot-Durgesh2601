@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+.button-container{
+  width: 18em;
+  height: 3em;
+  border: none;
+  cursor: pointer;
+}
+.add{
+  background: #663897;
+  color: white;
+}

@@ -1,0 +1,13 @@
+.App{
+  text-align: center;
+}
+.room-dark {
+  height: 25em;
+  background-color: black;
+}
+.room-lit {
+  height: 25em;
+}
+button{
+  cursor: pointer;
+}
