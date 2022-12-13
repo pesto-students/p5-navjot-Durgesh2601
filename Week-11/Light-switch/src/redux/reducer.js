@@ -1,4 +1,3 @@
-import { createStore } from "redux";
 import { TOGGLE } from "./actions";
 
 const initialState = {
@@ -6,7 +5,7 @@ const initialState = {
   textContent: "dark",
 };
 
-const reducer = (state = initialState, action) => {
+export const reducer = (state = initialState, action) => {
   const { background, textContent } = state;
   switch (action.type) {
     case TOGGLE: {
@@ -21,4 +20,3 @@ const reducer = (state = initialState, action) => {
   }
 };
 
-export const store = createStore(reducer);
