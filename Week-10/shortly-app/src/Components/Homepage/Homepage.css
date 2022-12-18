@@ -1,0 +1,78 @@
+.main-conatiner {
+  background: #f0f1f5;
+  margin-top: 3.5em;
+  padding-bottom: 1em;
+}
+.sub-container {
+  width: 100%;
+  display: flex;
+}
+.homepage-sub-section {
+  width: 65%;
+  text-align: center;
+  padding-left: 1.2em;
+}
+.homepage-main-text {
+  font-size: 3.5em;
+  font-weight: 500;
+}
+.homepage-sub-section-sub {
+  width: 33%;
+}
+.url-action-container {
+  border-radius: 0.6em;
+  width: 55%;
+  margin: auto;
+  height: 4.5em;
+  background: linear-gradient(to bottom right, #4b3f6b 0%, white 90%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.url-input {
+  width: 65%;
+  padding-left: 0.5em;
+  margin: 1.5em 2.5em 0 5em;
+  height: 1.7em;
+  border-radius: 0.5em;
+}
+.url-input::placeholder {
+  color: #f68686;
+}
+.btn-shortner {
+  padding: 0.3em 1em;
+  height: 2.3em;
+  color: white;
+  background-color: #2acfce;
+  border: 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+.url-static-container {
+  width: 55%;
+  margin: auto;
+  margin-top: 0.5em;
+  height: 4.2em;
+  padding-top: 0.7em;
+  border-radius: 0.6em;
+  background: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.url-static-sub-container {
+  border: 1px solid #dedede;
+  height: 80%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  padding: 0em 0.7em;
+  justify-content: space-between;
+}
+.url-actions-div {
+  display: flex;
+  gap: 0.7em;
+}
+.url-actions-div > p {
+  color: #2acfce;
+}
+.copy {
+  margin-top: 0.2em;
+  height: 90%;
+}

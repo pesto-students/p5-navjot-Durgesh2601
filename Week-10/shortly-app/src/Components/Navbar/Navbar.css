@@ -1,0 +1,26 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+.navbar-sections {
+  width: 25%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar-sections > a {
+  color: #3d68a8;
+  cursor: pointer;
+}
+.navigators {
+  padding-top: 1.5em;
+}
+.auths {
+  width: 10%;
+  display: flex;
+  gap: 0.5em;
+}
