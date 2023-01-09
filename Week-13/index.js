@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const http = require('http');
+const https = require('https');
 
 require('dotenv').config();
 
@@ -14,13 +14,13 @@ app.get('/weather', (req, res) => {
 
 const options = {
     hostname: 'jsonplaceholder.typicode.com',
-    port: 80,
+    port: 443,
     path: '/todos/1',
 }
-http.get(options, (res) => {
+https.get(options, (res) => {
     console.log(res.statusCode);
 })
-// app.listen((5000, () => {
-//     console.log(`Server listening on port 5000`);
-// }));
+app.listen((5000, () => {
+    console.log(`Server listening on port 5000`);
+}));
 
